@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="DChat Logo" class="logo">
+        <h1>DChat</h1>
+    </header>
+
+    <main id="auth-section">
+        <h2>Zaloguj się lub zarejestruj</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Hasło">
+        <button onclick="login()">Zaloguj</button>
+        <button onclick="register()">Zarejestruj</button>
+    </main>
+
+    <main id="chat-section" style="display:none;">
+        <div id="users-list"></div>
+        <div id="messages"></div>
+        <input type="text" id="message-input" placeholder="Wpisz wiadomość...">
+        <button onclick="sendMessage()">Wyślij</button>
+        <button onclick="logout()">Wyloguj się</button>
+
+        <div id="admin-panel" style="display:none;">
+            <h3>Mod Menu (Admin)</h3>
+            <button onclick="addFollowers()">Dodaj obserwujących</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
