@@ -1,0 +1,42 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+#messages {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+#users-list {
+    margin-bottom: 10px;
+}
